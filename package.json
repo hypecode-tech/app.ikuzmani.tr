@@ -1,0 +1,50 @@
+{
+  "name": "app.ikuzmani.tr",
+  "productName": "app.ikuzmani.tr",
+  "module": "commonjs",
+  "version": "1.0.0",
+  "description": "Yeni nesil insan kaynakları yazılımı",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "hypecode-tech",
+    "email": "hypecodetech@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hypecode-tech/app.ikuzmani.tr"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1",
+    "electron-updater": "^6.6.2"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.3",
+    "@electron-forge/maker-deb": "^7.8.3",
+    "@electron-forge/maker-rpm": "^7.8.3",
+    "@electron-forge/maker-squirrel": "^7.8.3",
+    "@electron-forge/maker-zip": "^7.8.3",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.3",
+    "@electron-forge/plugin-fuses": "^7.8.3",
+    "@electron-forge/publisher-github": "^7.8.3",
+    "@electron/fuses": "^1.8.0",
+    "electron": "37.2.6"
+  },
+  "build": {
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "hypecode-tech",
+        "repo": "app.ikuzmani.tr"
+      }
+    ]
+  }
+}
