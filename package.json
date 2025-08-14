@@ -1,7 +1,7 @@
 {
   "name": "app.ikuzmani.tr",
   "productName": "app.ikuzmani.tr",
-  "module": "commonjs",
+  "module": "module",
   "version": "1.0.0",
   "description": "Yeni nesil insan kaynakları yazılımı",
   "main": "src/index.js",
